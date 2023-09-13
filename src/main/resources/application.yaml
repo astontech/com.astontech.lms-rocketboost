@@ -1,0 +1,36 @@
+spring:
+  profiles:
+    active: "NONE"
+  security:
+    authentication:
+      method: "LDAP"
+    ldap:
+      domain: "astontech.com"
+      url: "ldap://10.1.249.105:389"
+    enable-csrf: false
+  data:
+    mongodb:
+      username: "admin"
+      password: "qwe123$!"
+      authentication-database: "admin"
+
+server:
+  servlet:
+    session:
+      timeout: "14400s"
+  ssl:
+    key-store-type: "PKCS12"
+    key-store: "classpath:keystore.p12"
+    key-store-password: "tomcat"
+    keyAlias: "tomcat"
+  port: 443
+
+seed:
+  reset:
+    database: false
+  excel:
+    reader: false
+  create:
+    quizzes: false
+  generate:
+    test-paths: false

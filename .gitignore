@@ -1,0 +1,7 @@
+src/main/frontend/node_modules/
+target/
+.idea/
+lms.iml
+#lms-videos.pem
+src/main/resources/static/
+src/main/java/com/astontech/lms/bootstrap/java-course-data.xlsx

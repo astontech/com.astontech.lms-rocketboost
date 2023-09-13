@@ -1,0 +1,19 @@
+spring:
+  security:
+    authentication:
+      method: "LDAP"
+  data:
+    mongodb:
+      username: "admin"
+      password: "qwe123$!"
+
+server:
+  servlet:
+    session:
+      timeout: "14400s"
+  ssl:
+    key-store-type: "PKCS12"
+    key-store: "classpath:keystore.p12"
+    key-store-password: "tomcat"
+    keyAlias: "tomcat"
+  port: 443

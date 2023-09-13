@@ -1,0 +1,8 @@
+{
+  "copyFiles": [
+    {
+      "from": "../resources/static/index.html",
+      "to": "../resources/templates"
+    }
+  ]
+}
